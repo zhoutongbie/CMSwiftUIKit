@@ -34,6 +34,7 @@ class CMTopMenuBar: UIView {
         btnW = ez.screenWidth / CGFloat(array.count)
         super.init(frame:CGRect.zero)
     }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         createTopButton()
@@ -51,6 +52,7 @@ class CMTopMenuBar: UIView {
             make.height.equalTo(1)
         }
     }
+    
     func createTopButton() {
         for i in 0..<array.count {
             let button = UIButton(type: UIButtonType.custom)

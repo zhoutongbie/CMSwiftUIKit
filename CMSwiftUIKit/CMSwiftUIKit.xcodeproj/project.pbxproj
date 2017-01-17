@@ -26,6 +26,7 @@
 		324E5B441E2DBAE600B95343 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324E5B321E2DBAE600B95343 /* UILabel+Extension.swift */; };
 		324E5B451E2DBAE600B95343 /* UITextView+Select.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324E5B331E2DBAE600B95343 /* UITextView+Select.swift */; };
 		324E5B461E2DBAE600B95343 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324E5B341E2DBAE600B95343 /* UIView+Extension.swift */; };
+		324E5B481E2DBC2E00B95343 /* CMDefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324E5B471E2DBC2E00B95343 /* CMDefaultTheme.swift */; };
 		44922EFE4CDBBE60229A19B3 /* Pods_CMSwiftUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF356EDA12C99553E8D1F07 /* Pods_CMSwiftUIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		324E5B321E2DBAE600B95343 /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		324E5B331E2DBAE600B95343 /* UITextView+Select.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Select.swift"; sourceTree = "<group>"; };
 		324E5B341E2DBAE600B95343 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		324E5B471E2DBC2E00B95343 /* CMDefaultTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMDefaultTheme.swift; sourceTree = "<group>"; };
 		E3B3A7E088B57CDFE7B42848 /* Pods-CMSwiftUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMSwiftUIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-CMSwiftUIKit/Pods-CMSwiftUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		FCF356EDA12C99553E8D1F07 /* Pods_CMSwiftUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMSwiftUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -148,6 +150,7 @@
 		324E5B281E2DBAE600B95343 /* CMUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				324E5B471E2DBC2E00B95343 /* CMDefaultTheme.swift */,
 				324E5B291E2DBAE600B95343 /* CMAutoHideLabel.swift */,
 				324E5B2A1E2DBAE600B95343 /* CMEvaluationToolView.swift */,
 				324E5B2B1E2DBAE600B95343 /* CMSubtitleButton.swift */,
@@ -302,6 +305,7 @@
 				324E5B3C1E2DBAE600B95343 /* CMAutoHideLabel.swift in Sources */,
 				324E5B3D1E2DBAE600B95343 /* CMEvaluationToolView.swift in Sources */,
 				324E5B371E2DBAE600B95343 /* CMAbstractDotView.swift in Sources */,
+				324E5B481E2DBC2E00B95343 /* CMDefaultTheme.swift in Sources */,
 				324E5B441E2DBAE600B95343 /* UILabel+Extension.swift in Sources */,
 				324E5B401E2DBAE600B95343 /* CMUIKit.swift in Sources */,
 				324E5B3B1E2DBAE600B95343 /* CMCyclingLabel.swift in Sources */,

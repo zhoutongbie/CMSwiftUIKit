@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+
+target 'CMSwiftUIKit' do
+pod 'SnapKit', '~> 3.0.2'
+pod 'EZSwiftExtensions'
+pod 'PKHUD_Swift_3'
+pod 'Kingfisher'
+pod 'RxCocoa', '~> 3.0.0-rc.1'
+pod 'ESPullToRefresh'
+pod 'Toast-Swift'
+end

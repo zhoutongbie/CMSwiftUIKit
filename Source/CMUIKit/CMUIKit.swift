@@ -15,8 +15,8 @@ class CMUIKit {
     class func topMenuBar(cotentArray:Array<String>?,
                           fontBtn:CGFloat = 13,
                           textColorBtn:UIColor = UIColor.darkGray,
-                          textColorSeledBtn:UIColor = DefaultThemeColor,
-                          bottomViewColor:UIColor = DefaultThemeColor,
+                          textColorSeledBtn:UIColor = CMDefaultTheme.theme.themeColor,
+                          bottomViewColor:UIColor = CMDefaultTheme.theme.themeColor,
                           BGColor:UIColor = UIColor.white) -> CMTopMenuBar{
         let topMenuBar = CMTopMenuBar.init(contentArray: cotentArray!)
         topMenuBar.fontBtn = fontBtn
@@ -94,7 +94,7 @@ class CMUIKit {
     }
     
     //MARK:分割线
-    class func cuttingLine(backgroundColor:UIColor = DefaultBoundaryColor,
+    class func cuttingLine(backgroundColor:UIColor = CMDefaultTheme.theme.defaultBoundaryColor,
                            height:CGFloat = 0.5) -> UIView {
         let line = UIView()
         line.backgroundColor = backgroundColor

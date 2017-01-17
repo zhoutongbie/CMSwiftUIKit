@@ -11,9 +11,6 @@ import Foundation
 /// 主题颜色
 let DefaultThemeColor:UIColor = UIColor.init(r: 0, g: 197, b: 153)
 
-/// 分割线
-let DefaultBoundaryColor:UIColor = UIColor.init(r: 221, g: 221, b: 221)
-
 /// 主文字颜色
 let DefaultTextColor : UIColor = UIColor.init(r: 51, g: 51, b: 51)
 
@@ -25,3 +22,6 @@ let DefaultTitleColor:UIColor = UIColor.init(r: 72, g: 72, b: 72)
 
 /// 导航栏颜色
 let DefaultNavbarColor:UIColor = UIColor.init(r: 72, g: 72, b: 72)
+
+/// 分割线
+let DefaultBoundaryColor:UIColor = UIColor.init(r: 221, g: 221, b: 221)

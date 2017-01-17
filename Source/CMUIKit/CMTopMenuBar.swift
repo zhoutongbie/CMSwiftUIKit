@@ -77,7 +77,7 @@ class CMTopMenuBar: UIView {
 //MARK:----属性----
     lazy var lineView : UIView = {
        let lineView = UIView()
-        lineView.backgroundColor = DefaultBoundaryColor
+        lineView.backgroundColor = CMDefaultTheme.theme.defaultBoundaryColor
         return lineView
     }()
     lazy var bottomLab : UILabel = {

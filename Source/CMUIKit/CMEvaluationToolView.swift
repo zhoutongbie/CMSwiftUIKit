@@ -16,6 +16,8 @@ class CMEvaluationToolView: UIView {
     let itemNum : CGFloat = 5              //item的个数
     private var _canClick : Bool = true    //是否支持点击
     private var _starShineCount : Int = 0  //点亮星个数
+    private var normalImage: UIImage
+    private var selectedImage: UIImage
     
     var canClick : Bool{
         set{
@@ -37,10 +39,11 @@ class CMEvaluationToolView: UIView {
             return _starShineCount
         }
     }
-    init() {
+    init(normalImage:UIImage,selectedImage: UIImage) {
+        self.normalImage = normalImage
+        self.selectedImage = selectedImage
         super.init(frame:CGRect.zero)
         self.backgroundColor = .white
-        
         addSubview(item1)
         addSubview(item2)
         addSubview(item3)
@@ -90,7 +93,7 @@ class CMEvaluationToolView: UIView {
         starShineCount(count: sender.tag )
     }
     private func isStarShineItemImage(isStarShine:Bool , item:UIButton){
-        item.setImage(UIImage.init(named: isStarShine ? Asset.Star_Icon.rawValue : Asset.Star_Lightgray_Icon.rawValue), for: .normal)
+        item.setImage(isStarShine ? self.selectedImage : self.normalImage, for: .normal)
     }
     private func starShineCount(count: Int) {
         switch count {
@@ -143,35 +146,35 @@ class CMEvaluationToolView: UIView {
     //MARK:-----属性-----
     lazy var item1: UIButton = {
         let item1 = UIButton(type: .custom)
-        item1.setImage(UIImage.init(named: Asset.Star_Lightgray_Icon.rawValue), for: .normal)
+        item1.setImage(self.normalImage, for: .normal)
         item1.addTarget(self, action: #selector(buttonTap(sender:)), for: .touchUpInside)
         item1.tag = 1
         return item1
     }()
     lazy var item2: UIButton = {
         let item2 = UIButton(type: .custom)
-        item2.setImage(UIImage.init(named: Asset.Star_Lightgray_Icon.rawValue), for: .normal)
+        item2.setImage(self.normalImage, for: .normal)
         item2.addTarget(self, action: #selector(buttonTap(sender:)), for: .touchUpInside)
         item2.tag = 2
         return item2
     }()
     lazy var item3: UIButton = {
         let item3 = UIButton(type: .custom)
-        item3.setImage(UIImage.init(named: Asset.Star_Lightgray_Icon.rawValue), for: .normal)
+        item3.setImage(self.normalImage, for: .normal)
         item3.addTarget(self, action: #selector(buttonTap(sender:)), for: .touchUpInside)
         item3.tag = 3
         return item3
     }()
     lazy var item4: UIButton = {
         let item4 = UIButton(type: .custom)
-        item4.setImage(UIImage.init(named: Asset.Star_Lightgray_Icon.rawValue), for: .normal)
+        item4.setImage(self.normalImage, for: .normal)
         item4.addTarget(self, action: #selector(buttonTap(sender:)), for: .touchUpInside)
         item4.tag = 4
         return item4
     }()
     lazy var item5: UIButton = {
         let item5 = UIButton(type: .custom)
-        item5.setImage(UIImage.init(named: Asset.Star_Lightgray_Icon.rawValue), for: .normal)
+        item5.setImage(self.normalImage, for: .normal)
         item5.addTarget(self, action: #selector(buttonTap(sender:)), for: .touchUpInside)
         item5.tag = 5
         return item5

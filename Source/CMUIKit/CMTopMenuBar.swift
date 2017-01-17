@@ -9,6 +9,7 @@
 
 import UIKit
 import RxSwift
+import EZSwiftExtensions
 
 class CMTopMenuBar: UIView {
     var lastBtn = UIButton()
@@ -30,7 +31,7 @@ class CMTopMenuBar: UIView {
     init(contentArray:Array<String>){
         selectedIndex = 0
         self.array = contentArray
-        btnW = kScreenWidth / CGFloat(array.count)
+        btnW = ez.screenWidth / CGFloat(array.count)
         super.init(frame:CGRect.zero)
     }
     override func layoutSubviews() {
